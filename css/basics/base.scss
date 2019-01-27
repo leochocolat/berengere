@@ -1,0 +1,28 @@
+body {
+  background-color: #f3e5cc;
+  // background-color: #3f3f3f;
+
+  a {
+    color: black;
+    text-decoration: none;
+    a:hover {
+      color: black !important;
+    }
+  }
+}
+
+.container-title {
+  .elt-title {
+    font-family: bebas-neue, sans-serif;
+    font-size: 40px;
+  }
+}
+
+.appear {
+  opacity: 0;
+}
+
+.move-up {
+  opacity: 0;
+  transform: translateY(0);
+}

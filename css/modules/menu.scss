@@ -1,0 +1,115 @@
+.menu {
+  transition: all .5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  a {
+    color: black;
+    a:hover {
+      color: black !important;
+    }
+  }
+  &.menu-on {
+    transition: all .5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    .container-menu {
+      .elt-menu {
+        .item-menu {
+          a {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          &.home a {
+            transition: all .6s ease-in-out .05s;
+          }
+          &.work a {
+            transition: all .6s ease-in-out .1s;
+          }
+          &.about a {
+            transition: all .6s ease-in-out .15s;
+          }
+          &.contact a {
+            transition: all .6s ease-in-out .2s;
+          }
+        }
+      }
+    }
+  }
+  font-family: acumin-pro, sans-serif;
+  z-index: 2;
+  background-color: rgba(255,255,255,.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  .container-menu {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    .elt-menu {
+      text-align: center;
+
+      .item-menu {
+        overflow: hidden;
+        margin: 20px auto;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 35px;
+
+        a {
+          display: block;
+          transform: translateY(100%);
+          opacity: 0;
+        }
+
+        &.home a {
+          transition: all .5s ease-in-out .05s;
+        }
+        &.work a {
+          transition: all .5s ease-in-out .1s;
+        }
+        &.about a {
+          transition: all .5s ease-in-out .15s;
+        }
+        &.contact a {
+          transition: all .5s ease-in-out .2s;
+        }
+      }
+      .item-language {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+
+        div {
+          position: relative;
+          padding: 10px 5px;
+          font-family: adobe-garamond-pro, serif;
+          &.french, &.english {
+            &:hover {
+              cursor: pointer;
+
+            }
+          }
+
+          &.active {
+            &:before {
+              content: '';
+              background-color: black;
+              width: 80%;
+              height: 3px;
+              position: absolute;
+              bottom: 10px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+
+          &.french {
+          }
+        }
+      }
+    }
+  }
+}

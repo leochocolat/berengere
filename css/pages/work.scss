@@ -1,0 +1,179 @@
+#page-work {
+  font-family: acumin-pro, sans-serif;
+  background-color: #f5e4cb;
+
+  .container-fluid-custom {
+    margin: auto;
+    width: 90%;
+    padding-top: 200px;
+  }
+
+  .container-title {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 15px;
+
+    .elt-title {
+      position: relative;
+      &:after {
+        content: '';
+        width: 100vw;
+        background-color: black;
+        position: absolute;
+        transform: translateX(10px);
+        top: 50%;
+        height: 2px;
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 576px) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .container-work {
+    margin: 30px auto;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    .container-projet {
+      height: 35vh;
+      margin: 15px auto;
+      .elt-projet {
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+
+        .bloc-link {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+
+        &.projet-1 {
+          background-image: url(../images/vignetteBIROTTEAU.jpg);
+        }
+        &.projet-2 {
+          background-image: url(../images/vignetteHEINZ.jpg);
+        }
+        &.projet-3 {
+          background-image: url(../images/vignetteJOON.jpg);
+        }
+        &.projet-4 {
+          background-image: url(../images/vignetteMAUIJIM.jpg);
+        }
+        &.projet-5 {
+          background-image: url(../images/vignetteVUARNET.jpg);
+        }
+        &.projet-6 {
+          background-image: url(../images/vignetteGILETTE.jpg);
+        }
+        &.projet-7 {
+          background-image: url(../images/vignetteATMO.jpg);
+        }
+        &.projet-8 {
+          background-image: url(../images/vignetteSKITTLES.jpg);
+        }
+        &.projet-9 {
+          background-image: url(../images/vignetteMANHAE.jpg);
+        }
+        &.projet-10 {
+          background-image: url(../images/vignetteINNOCENT.jpg);
+        }
+        &.projet-11 {
+          background-image: url(../images/vignetteSTAYAWAKE.jpg);
+        }
+        &.projet-12 {
+          background-image: url(../images/vignetteWALL.jpg);
+        }
+        &.projet-13 {
+          background-image: url(../images/vignetteFLEURSDUMAL.jpg);
+        }
+        &:hover {
+          .text-projet {
+            opacity: 1;
+            .elt-text-projet {
+              h1 {
+                opacity: 1;
+                transition: .4s ease-in-out all;
+                transform: translateX(0);
+              }
+              h2 {
+                opacity: 1;
+                transition: .4s ease-in-out all .05s;
+                transform: translateX(0);
+              }
+              .link-projet {
+                opacity: 1;
+                transition: .5s ease-in-out all .1s;
+                transform: translateX(0);
+              }
+            }
+          }
+        }
+
+        .text-projet {
+          background-image: radial-gradient(circle, rgba(0,0,0,.4), rgba(0,0,0,.7));
+          height: 100%;
+          transition: .2s ease-in-out all;
+          opacity: 0;
+          color: white;
+
+          .elt-text-projet {
+            position: relative;
+            top: 50%;
+            text-align: center;
+            transform: translateY(-40%);
+            h1,h2,.link-projet {
+              transition: .4s ease-in-out all;
+              transform: translateY(70%);
+              opacity: 0;
+            }
+          }
+
+          h1 {
+            font-size: 30px;
+            font-weight: 700;
+          }
+          h2 {
+            font-family: adobe-garamond-pro, serif;
+            font-weight: 100;
+            font-size: 25px;
+            font-style: oblique;
+          }
+          .link-projet {
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+            a {
+              color: white;
+              transition: .2s ease-in-out all;
+              text-decoration: none;
+              border-bottom: 3px solid transparent;
+              &:hover {
+                color: white;
+                transition: .1s ease-in-out all;
+                border-bottom: 3px solid white;
+              }
+            }
+          }
+
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
+
+        }
+      }
+    }
+  }
+}

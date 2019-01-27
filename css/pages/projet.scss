@@ -1,0 +1,140 @@
+#page-projet {
+  font-family: acumin-pro, sans-serif;
+  .container-image {
+    background-color: black;
+  }
+  .container-text {
+    background-color: white;
+  }
+
+  .container-fluid-custom {
+    margin: auto;
+    width: 90%;
+    padding: 100px 0;
+  }
+
+  .container-work {
+    margin: 50px auto;
+    width: 95%;
+    .container-projet {
+        width: 90%;
+        margin: 15px auto;
+        padding: 0;
+
+        .elt-projet-description {
+          padding-bottom: 10px;
+          h1, h2 {
+            text-align: center;
+          }
+          h1 {
+            font-size: 30px;
+            font-weight: 700;
+          }
+          h2 {
+            font-family: adobe-garamond-pro, serif;
+            font-weight: 100;
+            font-size: 25px;
+            font-style: oblique;
+            padding-bottom: 10px;
+          }
+          h3 {
+            font-size: 23px;
+            font-family: bebas-neue, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: 0;
+          }
+          p {
+            font-size: 20px;
+            margin: 0;
+          }
+
+          @media screen and (max-width: 576px) {
+            h3 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 18px;
+            }
+          }
+
+          .team {
+            font-size: 18px;
+            font-style: oblique;
+            padding-top: 10px;
+            a {
+              &:hover {
+                color: black;
+              }
+            }
+            @media screen and (max-width: 576px) {
+              font-size: 15px;
+            }
+          }
+        }
+
+        .vertical-row {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 100px;
+
+          .elt-projet {
+            margin: 10px 0;
+          }
+
+          @media screen and (max-width: 992px) {
+            margin: 0;
+          }
+        }
+
+        .video-msg {
+          text-align: center;
+          font-size: 25px;
+          font-family: bebas-neue, sans-serif;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          font-weight: 700;
+          margin: 0;
+
+          &.little {
+            font-size: 18px;
+          }
+
+          @media screen and (max-width: 576px) {
+            font-size: 20px;
+
+            &.little {
+              font-size: 15px; 
+            }
+          }
+        }
+
+        .elt-projet {
+          padding: 0 10px;
+          // height: 100%;
+          // width: 100%;
+          img {
+            width: 100%;
+            height: auto;
+            // box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+          }
+
+
+          &.video-wrapper {
+        	position: relative;
+        	padding-bottom: 56.25%; /* 16:9 */
+        	padding-top: 25px;
+        	height: 0;
+          iframe {
+          	position: absolute;
+          	top: 0;
+          	left: 0;
+          	width: 100%;
+          	height: 100%;
+          }
+        }
+        }
+    }
+  }
+}
