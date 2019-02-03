@@ -1,1 +1,17 @@
+.quote {
+  color: black;
+  position: fixed;
+  bottom: 30px;
+  left: 50px;
+  font-family: adobe-garamond-pro, serif;
+  font-style: oblique;
+  transform: rotateZ(-90deg);
+  text-transform: none;
+  transform-origin: left;
 
+  @media screen and (max-width: 768px) {
+    transform: rotateZ(0);
+    left: 5px;
+    bottom: 10px;
+  }
+}

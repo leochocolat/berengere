@@ -74,6 +74,28 @@
     .navbar {
       padding: 50px 20px; } }
 
+.quote {
+  color: black;
+  position: fixed;
+  bottom: 30px;
+  left: 50px;
+  font-family: adobe-garamond-pro, serif;
+  font-style: oblique;
+  -webkit-transform: rotateZ(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotateZ(-90deg);
+  text-transform: none;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left; }
+  @media screen and (max-width: 768px) {
+    .quote {
+      -webkit-transform: rotateZ(0);
+          -ms-transform: rotate(0);
+              transform: rotateZ(0);
+      left: 5px;
+      bottom: 10px; } }
+
 .menu {
   transition: all .5s ease-in-out;
   opacity: 0;
