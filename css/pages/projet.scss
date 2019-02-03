@@ -27,6 +27,7 @@
             text-align: center;
           }
           h1 {
+            text-transform: uppercase;
             font-size: 30px;
             font-weight: 700;
           }
@@ -46,8 +47,10 @@
             margin: 0;
           }
           p {
+            line-height: 115%;
             font-size: 20px;
-            margin: 0;
+            margin: 0 0 20px 0;
+            text-align: justify;
           }
 
           @media screen and (max-width: 576px) {
@@ -105,7 +108,7 @@
             font-size: 20px;
 
             &.little {
-              font-size: 15px; 
+              font-size: 15px;
             }
           }
         }
